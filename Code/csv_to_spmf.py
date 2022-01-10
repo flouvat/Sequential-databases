@@ -219,9 +219,6 @@ def spmf_patterns_to_csv(spmf_file_name:str, csv_file_name: str, mapping_file_na
 
       
 
-# change working dir
-os.chdir('C:\\Users\\flouvat\\OneDrive\\OneDrive - unc.nc\\Documents\\Recherche\\UNC\\Data\\Sequential data\\Code')
-
 # convert csv files to spmf files
 csv_to_spmf_data('../Data/CSV/e_shop.csv', '../Data/SPMF/e_shop.txt', order_attribute=True) 
 csv_to_spmf_data('../Data/CSV/microblogPCU.csv', '../Data/SPMF/microblogPCU.txt') 
