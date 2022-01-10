@@ -1,0 +1,7 @@
+../Data/CSV/e_shop.csv: [{'database size': 24026}, {'avg number of itemsets per sequence': 6.8872887704986265}, {'median number of itemsets per sequence': 4.0}, {'max number of itemsets per sequence': 195}, {'avg length': 61.98559893448764}, {'median length': 36.0}, {'max length': 1755}]
+
+../Data/CSV/microblogPCU.csv: [{'database size': 429}, {'avg number of itemsets per sequence': 74.0932400932401}, {'median number of itemsets per sequence': 86}, {'max number of itemsets per sequence': 135}, {'avg length': 296.3729603729604}, {'median length': 344}, {'max length': 540}]
+
+../Data/CSV/online_retail_II_all_products.csv: [{'database size': 4383}, {'avg number of itemsets per sequence': 5.3591147615788275}, {'median number of itemsets per sequence': 3}, {'max number of itemsets per sequence': 267}, {'avg length': 32.15468856947297}, {'median length': 18}, {'max length': 1602}]
+
+../Data/CSV/online_retail_II_best_products.csv: [{'database size': 4383}, {'avg number of itemsets per sequence': 5.3591147615788275}, {'median number of itemsets per sequence': 3}, {'max number of itemsets per sequence': 267}, {'avg length': 48.23203285420944}, {'median length': 27}, {'max length': 2403}]
