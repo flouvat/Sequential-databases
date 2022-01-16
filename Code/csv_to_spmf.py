@@ -18,7 +18,7 @@ def transactional_to_sequential(data: pd.DataFrame, date_order: str) -> List[Lis
     
     # add the column name in the values 
     # if the value is a list, then it adds the column name to each values of the list 
-    data[ data.columns[2:]] = data[ data.columns[2:]].astype(str).apply(lambda x: x.str.replace("['", x.name+'=', regex=False).str.replace("']",'', regex=False).str.replace("', '", ', '+x.name+'=',regex=False) if '[' in str(x) else x.name+'='+x )
+    data[ data.columns[2:]] = data[ data.columns[2:]].astype(str).apply(lambda x: x.str.replace('["', x.name+'=', regex=False).str.replace('"]','', regex=False).str.replace('", "', ', '+x.name+'=',regex=False) if '[' in str(x) else x.name+'='+x )
 
     # merge all the columns except the id and the date in a column 'itemset'
     # and convert strings into lists
@@ -220,10 +220,7 @@ def spmf_patterns_to_csv(spmf_file_name:str, csv_file_name: str, mapping_file_na
       
 
 # convert csv files to spmf files
-csv_to_spmf_data('../Data/CSV/e_shop.csv', '../Data/SPMF/e_shop.txt', order_attribute=True) 
-csv_to_spmf_data('../Data/CSV/microblogPCU.csv', '../Data/SPMF/microblogPCU.txt') 
-csv_to_spmf_data('../Data/CSV/online_retail_II_all_products.csv', '../Data/SPMF/online_retail_II_all_products.txt') 
-csv_to_spmf_data('../Data/CSV/online_retail_II_best_products.csv', '../Data/SPMF/online_retail_II_best_products.txt') 
-
-# test spmf pattern to csv file
-# spmf_patterns_to_csv('test_seq_patterns.txt','test_seq_patterns.csv','test_mapping.json')
+csv_to_spmf_data('./Data/CSV/e_shop.csv', './Data/SPMF/e_shop.txt', order_attribute=True) 
+csv_to_spmf_data('./Data/CSV/microblogPCU.csv', './Data/SPMF/microblogPCU.txt') 
+csv_to_spmf_data('./Data/CSV/online_retail_II_all_products.csv', './Data/SPMF/online_retail_II_all_products.txt') 
+csv_to_spmf_data('./Data/CSV/online_retail_II_best_products.csv', './Data/SPMF/online_retail_II_best_products.txt') 
